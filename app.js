@@ -7,6 +7,7 @@ const router = require("./routes/router");
 const cors = require("cors");
 const cookiParser = require("cookie-parser")
 const port = process.env.PORT || 8080;
+const axios = require('axios');
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.json());
